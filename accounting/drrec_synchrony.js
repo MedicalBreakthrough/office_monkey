@@ -41,8 +41,9 @@
             var lastName = document.getElementById('lname').value;
             var phone = document.getElementById('smobile').value;
             var tdate1 = document.getElementById('transaction_date1').value;
-            var tdate2 = document.getElementById('check_deposit').value;
-            var date = tdate1 ? tdate1 : tdate2;
+            var tdate2 = document.getElementById('check_deposit').value;            
+            var tdate3 = document.getElementsByName('created_on')[0].value;
+            var date = tdate1 || tdate2 || tdate3;
             var auth = document.getElementById('transaction_id1').value;
             var amount = document.getElementById('transaction_amount1').value;
             var commissionNotes = document.getElementById('commission_notes').value;
