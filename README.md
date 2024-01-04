@@ -29,7 +29,12 @@ To use these scripts, you need to have the Tampermonkey extension installed in y
 
 ### Shipping
 
-- [Track Shipments](scripts/department2/script1.js): Open a carrier website tracking number. SAIA, CustomCo, ...
+- [Track Shipments](shipping/drrec_ordertrack.js): Open a carrier website tracking number. SAIA, CustomCo, ...
+
+
+### General
+
+- [General Bugs](general/bugs.js): Collection of bug fixes. 1. Empty ToDo Rewards
 
 
 ### Demonstration Video
