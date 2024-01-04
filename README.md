@@ -31,6 +31,12 @@ To use these scripts, you need to have the Tampermonkey extension installed in y
 
 - [Track Shipments](scripts/department2/script1.js): Open a carrier website tracking number. SAIA, CustomCo, ...
 
+
+### Demonstration Video
+
+https://github.com/MedicalBreakthrough/office_monkey/assets/541161/ad0224db-2b4f-412a-bbee-f58b83e7c402
+
+
 ## Contributing
 
 If you have a script that you would like to contribute to this repository, please follow these steps:
