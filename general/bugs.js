@@ -5,17 +5,18 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.drrecommendations.com/admin/employee-manage-customer-service.php*
+// @match        https://www.drrecommendations.com/admin/updateorder.php?id=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=drrecommendations.com
 // @grant        none
 // ==/UserScript==
+
 
 
 (function () {
     'use strict';
     console.log('bugfixer alive');
 
-    // find the first a inside div.main_form
-    var mainForm = document.querySelector('div.main_form');
+    
 
     // function to fix bugs
     function fixBugs() {
@@ -36,7 +37,21 @@
     btn.style['font-weight'] = 'bold';
     btn.style.color = '#fff';
 
-    // insert the button before the first a
-    mainForm.appendChild(btn);
+    // get the page from url 
+    var page = window.location.pathname.split('/').pop().split('.')[0];
+
+    // switch page
+    switch (page) {
+        case 'employee-manage-customer-service':
+            var mainForm = document.querySelector('div.main_form');
+            mainForm.appendChild(btn);
+            break;
+        case 'updateorder':
+            var mainDiv = document.querySelector('div#main');
+            mainDiv.appendChild(btn);
+            break;
+        default:
+            break;
+    }
 
 })();
