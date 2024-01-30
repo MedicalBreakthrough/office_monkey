@@ -18,7 +18,7 @@
     const login_url = "https://www.drrecommendations.com/admin/login.php";
     const assigned_url = "https://www.drrecommendations.com/admin/assignedtome.php";
     const session_url = GM_getValue("session_url");
-    const no_session_urls = [login_url, assigned_url]
+    const no_session_urls = [login_url, assigned_url, "https://www.drrecommendations.com/admin/error.php"]
 
     // redirect the user to the session_url if the current_url is the login_url
     if (current_url == assigned_url && session_url) {    
